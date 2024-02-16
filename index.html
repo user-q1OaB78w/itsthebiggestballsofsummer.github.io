@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"></meta>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"></meta>
+
+		<title>Swills</title>
+		<link rel="icon" href="src/LOGO.png" type="image/x-icon"></link>
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        
+		<link rel="stylesheet" href="styles.css"></link>
+        <script src="header.js"></script>
+	</head>
+
+    <body>
+        <header>
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start" style="padding: 2vh 2vw 2vh 2vw;">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img src="src/LOGO.png" alt="Swills Optimization" width="80px" height="80px"/>                  
+                </a>
+        
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link link px-2">Home</a></li>
+                    <li><a href="#" class="nav-link link px-2">Pricing</a></li>
+                    <li><a href="#" class="nav-link link px-2">About</a></li>
+                </ul>
+        
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-light me-2">Buy Now</button>
+                    <button type="button" class="btn btn-outline-light me-2">Login</button>
+                </div>
+            </div>
+        </header>
+
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="padding: 0;">
+                    <div class="banner-container">
+                        <div class="banner-background">
+                            <img src="src/BANNER.png" alt="Swills FPS Boost" width="auto" height="100%"/>
+                        </div>
+
+                        <div class="row flex-sm-row">
+                            <div class="col-md-6" style="padding: 12vw;">
+                                <div style="padding-bottom: 0.25vh;">
+                                    <div class="banner-content" style="border-radius: 20px 20px 0 0;">
+                                        <img src="src/MAXIMIZE_PERFORMANCE.png" alt="Maximize Performance With Swills"/>
+                                    </div>
+                                </div>
+
+                                <div style="padding-bottom: 0.25vh;">
+                                    <div class="banner-content">
+                                        <img src="src/BOOST_FPS.png" alt="Boost FPS With Swills"/>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="banner-content" style="border-radius: 0 0 20px 20px;">
+                                        <img src="src/BUY_NOW.png" alt="Buy Swills Now"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide swiper-slide-padding">
+                    <div class="row flex-sm-row">
+                        <div class="col-md-5 align-self-center">
+                            <h1>Held back by Lag, Ping or Crashes?</h1>
+                            <p2><br>Fed up with losing games from lag, game freezes or crashing while gaming? We've all been there, facing countless frustrating moments.<br><br></p2>
+                            <p>Our application ensures a seamless user experience, boosting FPS and reducing latency in every game - helping you dominate the gaming arena.</p>
+                        </div>
+                        
+                        <div class="col-md-7 text-center align-self-center">
+                            <video class="img-fluid video-player" alt="Swills FPS, Ping, Latency Benefits" autoplay="autoplay" muted loop playsinline preload="auto">
+                                <source src="src/PERF_STATS.webm" type="video/webm">
+                                <source src="src/PERF_STATS.mp4" type="video/mp4;">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide swiper-slide-padding">
+                    <div class="row flex-sm-row section-padding" style="padding-bottom: 5vh;">
+                        <div class="col-md-12 align-self-center text-center scroll-trigger animate--slide-in">
+                            <h1> {{ heading }} </h1>
+                            <p class="p1-dynamic-size"> {{ text }} </p>
+                        </div>
+                    </div>
+                    
+                    <div class="row g-1 flex-sm-row">
+                        <div class="col-md-4">
+                            <div id="column-1" class="container border-radius-3x-1 alignment">
+                                <video class="img-fluid video-player video-1" alt="Ultra Responsive" muted playsinline preload="auto" autoplay="autoplay">
+                                    <source src="src/ULTRA_RESPONSIVE.webm" type="video/webm">
+                                    <source src="src/ULTRA_RESPONSIVE.mp4" type="video/mp4;">
+                                </video>
+                                <h3>Ultra Responsive</h3>
+                                <p class="desktop-text">Say goodbye to frustrating delays as Swills tackles input lag and reduces latency, ensuring swift reactions during intense gaming sessions.</p>
+                                <p class="mobile-text">Say goodbye to frustrating delays with Swills.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div id="column-2" class="container alignment">
+                                <video class="img-fluid video-player video-2" alt="Game Faster" muted playsinline preload="auto" autoplay="autoplay">
+                                    <source src="src/GAME_FASTER.webm" type="video/webm">
+                                    <source src="src/GAME_FASTER.mp4" type="video/mp4;">
+                                </video>
+                                <h3>Game Faster</h3>
+                                <p class="desktop-text">Elevate your gaming experience by maximizing FPS in games like Valorant, Fortnite and Minecraft.</p>
+                                <p class="mobile-text">Elevate your gaming experience by maximizing FPS.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div id="column-3" class="container border-radius-3x-2 alignment">
+                                <video class="img-fluid video-player video-3" alt="Lightning Fast" muted playsinline preload="auto" autoplay="autoplay">
+                                    <source src="src/LIGHTNING_FAST.webm" type="video/webm">
+                                    <source src="src/LIGHTNING_FAST.mp4" type="video/mp4;">
+                                </video>
+                                <h3>Lightning Fast</h3>
+                                <p class="desktop-text">Enjoy stable and reliable connection whilst you play. Swills fine-tunes network settings for titles such as CS:GO 2, Overwatch 2, Call of Duty: Warzone 3.0 and others.</p>
+                                <p class="mobile-text">Enjoy stable and reliable connection whilst you play.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-padding">
+
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <script src="swiper.js"></script>
+        <script src="multicolumn.js"></script>
+    </body>
+</html>
