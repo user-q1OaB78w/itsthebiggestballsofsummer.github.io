@@ -50,9 +50,9 @@ body
     color: #FFFFFF;
 }
 
-header
+header, mobile-header
 {
-    background: transparent;
+    background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(4px);
     position: fixed;
     width: 100%;
@@ -67,6 +67,19 @@ header
 }
 
 @media (max-width: 991px)
+{
+    .desktop
+    {
+        display: none;
+    }
+
+    .mobile
+    {
+        display: grid;
+    }
+}
+
+@media (max-height: 991px)
 {
     .desktop
     {
@@ -182,10 +195,41 @@ header
     }
 }
 
-.video-1, .video-2, .video-3
+.video-1, .video-2, .video-3, .mobile-video-1, .mobile-video-2, .mobile-video-3
 {
     width: 100%;
     height: auto;
+}
+
+@media (max-height: 991px)
+{
+    .mobile-video-1, .mobile-video-2, .mobile-video-3
+    {
+        width: 40%;
+        height: auto;
+    }
+    .mobile-video
+    {
+        display: none;
+    }
+}
+
+@media (max-height: 768px)
+{
+    .mobile-video-1, .mobile-video-2, .mobile-video-3
+    {
+        width: 30%;
+        height: auto;
+    }
+}
+
+@media (max-height: 654px)
+{
+    .mobile-video-1, .mobile-video-2, .mobile-video-3
+    {
+        width: 20%;
+        height: auto;
+    }
 }
 
 .multicolumn-img
