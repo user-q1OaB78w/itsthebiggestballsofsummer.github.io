@@ -1,20 +1,3 @@
-const mobileSwiper = new Swiper('.mobile-swiper',
-{
-    direction: 'vertical',
-    loop: false,
-    mousewheel: true,
-    spaceBetween: 250,
-    pagination:
-    {
-      el: '.mobile-swiper-pagination',
-      clickable: true,
-    },
-    navigation:
-    {
-      nextEl: ".swiper-button-next",
-    },
-});
-
 const desktopSwiper = new Swiper('.desktop-swiper',
 {
     direction: 'vertical',
@@ -28,19 +11,27 @@ const desktopSwiper = new Swiper('.desktop-swiper',
     },
 });
 
+const mobileSwiper = new Swiper('.mobile-swiper',
+{
+    direction: 'vertical',
+    loop: false,
+    mousewheel: true,
+    spaceBetween: 250,
+});
+
 const reviewSwiper = new Swiper('.review-swiper',
 {
     direction: 'horizontal',
-    loop: false,
+    loop: true,
     spaceBetween: 50,
     slidesPerView: 'auto',
+    speed: 2000,
     autoplay:
     {
       delay: 3000,
       disableOnInteraction: false,
       reverseDirection: false,
     },
-    speed: 2000,
     pagination:
     {
       el: '.review-swiper-pagination',

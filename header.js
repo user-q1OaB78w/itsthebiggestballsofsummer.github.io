@@ -13,7 +13,7 @@ function updateSwiperHeight()
     const header = document.querySelector('header');
     const headerHeight = header.clientHeight;
 
-    const swiperSlides = document.querySelectorAll('.swiper-slide-padding');
+    const swiperSlides = document.querySelectorAll('.header-padding');
 
     swiperSlides.forEach(function(slide)
     {
