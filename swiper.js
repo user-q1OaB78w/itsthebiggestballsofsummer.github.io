@@ -10,24 +10,3 @@ const swiper = new Swiper('.swiper',
       clickable: true,
     },
 });
-
-const reviewSwiper = new Swiper('.review-swiper',
-{
-    direction: 'horizontal',
-    loop: true,
-    spaceBetween: 50,
-    slidesPerView: 'auto',
-    speed: 2000,
-    autoplay:
-    {
-      delay: 3000,
-      disableOnInteraction: false,
-      reverseDirection: false,
-    },
-    pagination:
-    {
-      el: '.review-swiper-pagination',
-      clickable: true,
-      dynamicBullets: true,
-    },
-});
