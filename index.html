@@ -23,20 +23,58 @@
 	</head>
 
     <body>
-        <div class="desktop">
-            <header>
-                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-sm-start" style="padding: 2vh 2vw 2vh 2vw;">
-                    <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                        <img src="src/LOGO.png" alt="Swills Optimization" width="75px" height="75px"/>      
+        <header class="desktop-header">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-sm-start" style="padding: 2vh 2vw 2vh 2vw;">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img src="src/LOGO.png" alt="Swills Optimization" width="75px" height="75px"/>      
+                </a>
+        
+                <ul class="nav col-12 col-sm-auto me-sm-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link link px-2">Home</a></li>
+                    <li><a href="#" class="nav-link link px-2">Pricing</a></li>
+                    <li><a href="#" class="nav-link link px-2">About</a></li>
+                </ul>
+        
+                <div class="text-end">
+                    <a href="#" style="text-decoration: none;">
+                        <button type="button" class="btn btn-outline-light me-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-arrow-down-fill" viewBox="0 0 16 16">
+                                <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708"/>
+                            </svg>
+                        </button>
                     </a>
-            
-                    <ul class="nav col-12 col-sm-auto me-sm-auto mb-2 justify-content-center mb-md-0">
-                        <li><a href="#" class="nav-link link px-2">Home</a></li>
-                        <li><a href="#" class="nav-link link px-2">Pricing</a></li>
-                        <li><a href="#" class="nav-link link px-2">About</a></li>
-                    </ul>
-            
-                    <div class="text-end">
+
+                    <a href="#" style="text-decoration: none;">
+                        <button type="button" class="btn btn-outline-light me-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                            </svg>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <header class="mobile-header">
+            <div class="container py-3 d-flex flex-wrap align-items-center justify-content-center"  data-bs-toggle="collapse" href="#collapseNavbar">
+                <div>
+                    <img src="src/LOGO.png" alt="Swills Optimization" width="75px" height="75px"/>
+                </div>
+            </div>
+    
+            <div class="w-100 float-start">
+                <div class="collapse" id="collapseNavbar">
+                    <nav class="navbar navbar-expand-sm">
+                        <div class="container d-flex flex-wrap align-items-center justify-content-center">
+                            <ul class="navbar-nav">
+                                <li><a href="#" class="nav-link link px-2">Home</a></li>
+                                <li><a href="#" class="nav-link link px-2">Pricing</a></li>
+                                <li><a href="#" class="nav-link link px-2">About</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <div class="d-flex flex-wrap align-items-center justify-content-center" style="padding-bottom: 2.5vh;">
                         <a href="#" style="text-decoration: none;">
                             <button type="button" class="btn btn-outline-light me-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-arrow-down-fill" viewBox="0 0 16 16">
@@ -54,12 +92,13 @@
                         </a>
                     </div>
                 </div>
-            </header>
+            </div>
+        </header>
 
-            <div class="desktop-swiper">
+        <div class="desktop">
+            <div class="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide" style="padding: 0;">
-
                         <div class="banner-container">
                             <div class="banner-background">
                                 <img src="src/BANNER.png" alt="Swills FPS Boost" width="auto" height="100%"/>
@@ -87,11 +126,9 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
 
                     <div class="swiper-slide header-padding">
-
                         <div class="row flex-lg-row">
                             <div class="col-lg-5 align-self-center">
                                 <h1>Held back by Lag, Ping or Crashes?</h1>
@@ -106,11 +143,9 @@
                                 </video>
                             </div>
                         </div>
-
                     </div>
 
                     <div class="swiper-slide header-padding">
-
                         <div class="text-center" style="padding-bottom: 5vh;">
                             <h1>Step Up Your Gaming Experience</h1>
                             <p>We'll help you take your gaming to the next level.</p>
@@ -150,11 +185,9 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
 
                     <div class="swiper-slide header-padding">
-
                         <div class="text-center" style="padding-bottom: 5vh;">
                             <h1>Hear What Ours Have To Say</h1>
                             <p>
@@ -322,17 +355,15 @@
                                 </div>
 
                             </div>
-                                
+                             
                             <div class="review-swiper-pagination swiper-pagination"></div>
                         </div>
-
                     </div>
 
                     <div class="swiper-slide header-padding">
-                        
                         <div class="text-center" style="padding-bottom: 5vh;">
                             <h1>Explore Our Perks</h1>
-                            <p>We'll help you take your gaming to the next level.</p>
+                            <p>Our application is equipped with features designed to give you a competitive edge.</p>
                         </div>
 
                         <div class="row g-1 flex-lg-row text-center">
@@ -384,11 +415,9 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
 
                     <div class="swiper-slide header-padding">
-                        
                         <div class="text-center" style="padding-bottom: 5vh;">
                             <h1>Questions</h1>
                             <p>Frequently asked questions about Swills, answered.</p>
@@ -428,11 +457,9 @@
                                 <br>Of course, you can contact us  through our Discord or Email!<br><br>
                             </div>
                         </div>
-
                     </div>
 
                     <div class="swiper-slide header-padding">
-
                         <div class="cta-container">
                             <div class="cta-background">
                                 <img src="src/BANNER.png" alt="Swills FPS Boost"/>
@@ -465,7 +492,6 @@
                     </div>
 
                     <div class="swiper-slide header-padding">
-
                         <div class="row flex-lg-row">
                             <div class="col-lg-6 align-self-center">
                                 <h1>Join Our Community</h1>
@@ -483,12 +509,9 @@
                                 <iframe style="padding-top: 20px;" src="https://discord.com/widget?id=938873545721798716&theme=dark" width="auto" height="500px" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe> 
                             </div>
                         </div>
-
                     </div>
 
-
                     <div class="swiper-slide">
-
                         <div class="container header-padding">
                             <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5">
                                 <div class="col mb-3">
@@ -588,454 +611,333 @@
                                 </div>
                             </footer>
                         </div>
-
                     </div>
-
                 </div>
 
-                <div class="desktop-swiper-pagination swiper-pagination header-padding"></div>
+                <div class="main-swiper-pagination swiper-pagination header-padding"></div>
             </div>
         </div>
 
         <div class="mobile">
-            <mobile-header>
-                <div class="container py-3 d-flex flex-wrap align-items-center justify-content-center">
-                    <div data-bs-toggle="collapse" href="#collapseNavbar">
-                        <img src="src/LOGO.png" alt="Swills Optimization" width="75px" height="75px"/>
+            <div class="section" style="padding: 0;">
+                <div class="banner-container">
+                    <div class="banner-background">
+                        <img src="src/BANNER.png" alt="Swills FPS Boost" width="auto" height="100%"/>
+                    </div>
+
+                    <div class="row flex-lg-row">
+                        <div class="col-lg-6 banner-widget">
+                            <div style="padding-bottom: 0.25vh;">
+                                <div class="banner-content" style="border-radius: 20px 20px 0 0;">
+                                    <img src="src/MAXIMIZE_PERFORMANCE.png" alt="Maximize Performance With Swills"/>
+                                </div>
+                            </div>
+
+                            <div style="padding-bottom: 0.25vh;">
+                                <div class="banner-content">
+                                    <img src="src/BOOST_FPS.png" alt="Boost FPS With Swills"/>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="banner-content" style="border-radius: 0 0 20px 20px;">
+                                    <img src="src/BUY_NOW.png" alt="Buy Swills Now"/>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-        
-                <div class="w-100 float-start">
-                    <div class="collapse" id="collapseNavbar">
-                        <nav class="navbar navbar-expand-sm">
-                            <div class="container d-flex flex-wrap align-items-center justify-content-center">
-                                <ul class="navbar-nav">
-                                    <li><a href="#" class="nav-link link px-2">Home</a></li>
-                                    <li><a href="#" class="nav-link link px-2">Pricing</a></li>
-                                    <li><a href="#" class="nav-link link px-2">About</a></li>
-                                </ul>
-                            </div>
-                        </nav>
+            </div>
 
-                        <div class="d-flex flex-wrap align-items-center justify-content-center" style="padding-bottom: 2.5vh;">
+            <div class="section">
+                <div class="row flex-lg-row">
+                    <div class="col-lg-5 align-self-center">
+                        <h1>Held back by Lag, Ping or Crashes?</h1>
+                        <p2><br>Fed up with losing games from lag, freezes or crashing while gaming? We've all been there, facing countless frustrating moments.<br><br></p2>
+                        <p>Our application ensures a seamless user experience, boosting FPS and reducing latency in every game, helping you dominate the gaming arena.</p>
+                    </div>
+                    
+                    <div class="col-lg-7 align-self-center">
+                        <video class="img-fluid video-player" alt="Swills FPS, Ping, Latency Benefits" autoplay="autoplay" muted loop playsinline preload="auto">
+                            <source src="src/PERF_STATS.webm" type="video/webm">
+                            <source src="src/PERF_STATS.mp4" type="video/mp4;">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="text-center" style="padding-bottom: 5vh;">
+                    <h1>Step Up Your Gaming Experience</h1>
+                    <p>We'll help you take your gaming to the next level.</p>
+                </div>
+                
+                <div class="row g-1 flex-lg-row text-center">
+                    <div class="col-lg-4">
+                        <div id="column-1" class="multicolumn-container" style="border-radius: 20px;">
+                            <video class="img-fluid video-player video-1" alt="Ultra Responsive" muted playsinline preload="auto">
+                                <source src="src/ULTRA_RESPONSIVE.webm" type="video/webm">
+                                <source src="src/ULTRA_RESPONSIVE.mp4" type="video/mp4;">
+                            </video>
+                            <h3>Ultra Responsive</h3>
+                            <p>Say goodbye to frustrating delays. Swills tackles input lag and reduces latency, ensuring swift reactions during intense gaming sessions.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div id="column-2" class="multicolumn-container" style="border-radius: 20px;">
+                            <video class="img-fluid video-player video-2" alt="Game Faster" muted playsinline preload="auto">
+                                <source src="src/GAME_FASTER.webm" type="video/webm">
+                                <source src="src/GAME_FASTER.mp4" type="video/mp4;">
+                            </video>
+                            <h3>Game Faster</h3>
+                            <p>Elevate your gaming experience by maximizing FPS in games like Valorant, Fortnite and Minecraft.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div id="column-3" class="multicolumn-container" style="border-radius: 20px;">
+                            <video class="img-fluid video-player video-3" alt="Lightning Fast" muted playsinline preload="auto">
+                                <source src="src/LIGHTNING_FAST.webm" type="video/webm">
+                                <source src="src/LIGHTNING_FAST.mp4" type="video/mp4;">
+                            </video>
+                            <h3>Lightning Fast</h3>
+                            <p>Enjoy a stable and reliable connection. Swills fine-tunes network settings for titles such as CS:GO 2, Overwatch 2, Call of Duty: Warzone 3.0 and others.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="text-center" style="padding-bottom: 5vh;">
+                    <h1>Explore Our Perks</h1>
+                    <p>Our application is equipped with features designed to give you a competitive edge.</p>
+                </div>
+
+                <div class="row g-1 flex-lg-row text-center">
+                    <div class="col-lg-4">
+                        <div class="multicolumn-container lg-6x-1">
+                            <img src="src/COMPATIBLE.png" alt="Compatible" class="img-fluid multicolumn-img"/>
+                            <h4>Compatible</h4>
+                            <p3>Works for all games, Windows 10, 11, laptops, desktops, NVIDIA, AMD, Intel GPUs</p3>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="multicolumn-container lg-6x-2">
+                            <img src="src/VERSATILE.png" alt="Versatile" class="img-fluid multicolumn-img"/>
+                            <h4>Versatile</h4>
+                            <p3>Increases performance for all games and apps</p3>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="multicolumn-container lg-6x-3">
+                            <img src="src/PRIVACY.png" alt="Privacy" class="img-fluid multicolumn-img"/>
+                            <h4>Privacy Ensured</h4>
+                            <p3>Will not run in the background</p3>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="multicolumn-container lg-6x-4">
+                            <img src="src/SYSTEM.png" alt="System Cleanup" class="img-fluid multicolumn-img"/>
+                            <h4>System Cleanup</h4>
+                            <p3>Frees up disk space, reduces number of background processes</p3>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="multicolumn-container lg-6x-5">
+                            <img src="src/PERFORMANCE.png" alt="Performance" class="img-fluid multicolumn-img"/>
+                            <h4>Enhanced Performance</h4>
+                            <p3>Boosts FPS, reduces stuttering and ensures a faster connection, lower, more stable ping</p3>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="multicolumn-container lg-6x-6">
+                            <img src="src/STORYTELLING.png" alt="Storytelling" class="img-fluid multicolumn-img"/>
+                            <h4>Storytelling</h4>
+                            <p3>Improves recording quality for content creators</p3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="text-center" style="padding-bottom: 5vh;">
+                    <h1>Questions</h1>
+                    <p>Frequently asked questions about Swills, answered.</p>
+                </div>
+
+                <div style="padding: 0.125vh 0;">
+                    <button class="collapsible">What is Swills?</button>
+                    <div class="content">
+                        <br>Experience the next level of PC gaming with Swills, the ultimate tool for boosting FPS. Our application is designed to specifically enhance gameplay and overall computer performance, providing smoother and more responsive gaming sessions.<br><br>
+                    </div>
+                </div>
+
+                <div style="padding: 0.125vh 0;">
+                    <button class="collapsible">How Does Swills Improve My PC's Performance?</button>
+                    <div class="content">
+                        <br>Boosting FPS - Swills' advanced optimization techniques ensure a seamless gaming experience and a competitive advantage.<br>Minimize Latency and Lag - Swills tackles input lag and reduces latency, ensuring swift reactions and improved performance during intense gaming sessions.<br>Optimizing Network Performance - Swills fine-tunes network settings for titles such as CS:GO 2, Overwatch 2, Call of Duty: Warzone 3.0 and others.<br><br>
+                    </div>
+                </div>
+
+                <div style="padding: 0.125vh 0;">
+                    <button class="collapsible">How Long Does Swills Take?</button>
+                    <div class="content">
+                        <br>Purchase, Download and Use. It's that simple!<br><br>
+                    </div>
+                </div>
+
+                <div style="padding: 0.125vh 0;">
+                    <button class="collapsible">Are There Any Risks To Using Swills?</button>
+                    <div class="content">
+                        <br>None. Swills will not cause any harm to your system or get you banned from games.<br><br>
+                    </div>
+                </div>
+
+                <div style="padding: 0.125vh 0;">
+                    <button class="collapsible">Is There Customer Support Available For Swills?</button>
+                    <div class="content">
+                        <br>Of course, you can contact us  through our Discord or Email!<br><br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="cta-container">
+                    <div class="cta-background">
+                        <img src="src/BANNER.png" alt="Swills FPS Boost"/>
+                    </div>
+
+                    <div class="cta-content">
+                        <div class="col-lg-6 align-self-center text-center">
+                            <h1>Maximize Your FPS</h1>
+                            <p>Step up your gaming experience with Swills today.<br><br></p>
                             <a href="#" style="text-decoration: none;">
-                                <button type="button" class="btn btn-outline-light me-2">
+                                <button type="button" class="btn btn-outline-light me-2 btn-custom-width" style="font-weight: 700; font-size: larger;">
+                                    Buy Now
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-arrow-down-fill" viewBox="0 0 16 16">
                                         <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708"/>
                                     </svg>
                                 </button>
                             </a>
 
-                            <a href="#" style="text-decoration: none;">
-                                <button type="button" class="btn btn-outline-light me-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                            <a href="https://www.discord.gg/swills" style="text-decoration: none;">
+                                <button type="button" class="btn btn-outline-primary me-2 btn-custom-width" style="font-weight: 700; font-size: larger;">
+                                    Discord
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+                                        <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/>
                                     </svg>
                                 </button>
                             </a>
                         </div>
                     </div>
                 </div>
-            </mobile-header>
+            </div>
 
-            <div class="mobile-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide" style="padding: 0;">
-
-                        <div class="banner-container">
-                            <div class="banner-background">
-                                <img src="src/BANNER.png" alt="Swills FPS Boost" width="auto" height="100%"/>
-                            </div>
-
-                            <div class="row flex-lg-row">
-                                <div class="col-lg-6 banner-widget">
-                                    <div style="padding-bottom: 0.25vh;">
-                                        <div class="banner-content" style="border-radius: 20px 20px 0 0;">
-                                            <img src="src/MAXIMIZE_PERFORMANCE.png" alt="Maximize Performance With Swills"/>
-                                        </div>
-                                    </div>
-
-                                    <div style="padding-bottom: 0.25vh;">
-                                        <div class="banner-content">
-                                            <img src="src/BOOST_FPS.png" alt="Boost FPS With Swills"/>
-                                        </div>
-                                    </div>
-
-                                    <div>
-                                        <div class="banner-content" style="border-radius: 0 0 20px 20px;">
-                                            <img src="src/BUY_NOW.png" alt="Buy Swills Now"/>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+            <div class="section">
+                <div class="container header-padding">
+                    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5">
+                        <div class="col mb-3">
+                            <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                                <img src="src/SWILLS_LOGO.png" alt="Swills Optimization" class="img-fluid"/>
+                            </a>
+                            <p3>&copy; 2024 Swills Labs Ltd.<br>All rights reserved.</p3>
                         </div>
-
-                    </div>
-
-                    <div class="swiper-slide mobile-header-padding">
-
-                        <div class="row flex-lg-row">
-                            <div class="col-lg-12 align-self-center">
-                                <h1>Held back by Lag, Ping or Crashes?</h1>
-                                <p2><br>Fed up with losing games from lag, freezes or crashing while gaming? We've all been there, facing countless frustrating moments.<br><br></p2>
-                                <p>Our application ensures a seamless user experience, boosting FPS and reducing latency in every game, helping you dominate the gaming arena.</p>
-                            </div>
+                    
+                        <div class="col mb-3">
+                    
                         </div>
-
-                    </div>
-
-                    <div class="swiper-slide mobile-header-padding">
-
-                        <div class="row flex-lg-row">
-                            <div class="col-lg-12 align-self-center">
-                                <video class="img-fluid video-player mobile-video" alt="Swills FPS, Ping, Latency Benefits" autoplay="autoplay" muted loop playsinline preload="auto">
-                                    <source src="src/PERF_STATS.webm" type="video/webm">
-                                    <source src="src/PERF_STATS.mp4" type="video/mp4;">
-                                </video>
-                            </div>
-                        </div>
-
-                        <div class="text-center">
-                            <h1>Step Up Your Gaming Experience</h1>
-                            <p>We'll help you take your gaming to the next level.</p>
-                        </div>
-
-                    </div>
-
-
-                    <div class="swiper-slide mobile-header-padding">
-                        
-                        <div class="text-center">
-                            <div id="mobile-column-1" class="multicolumn-container" style="border-radius: 20px;">
-                                <video class="img-fluid video-player mobile-video-1" alt="Ultra Responsive" muted playsinline preload="auto" autoplay="autoplay">
-                                    <source src="src/ULTRA_RESPONSIVE.webm" type="video/webm">
-                                    <source src="src/ULTRA_RESPONSIVE.mp4" type="video/mp4;">
-                                </video>
-                                <h3>Ultra Responsive</h3>
-                                <p>Say goodbye to frustrating delays. Swills tackles input lag and reduces latency, ensuring swift reactions during intense gaming sessions.</p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="swiper-slide mobile-header-padding">
-
-                        <div class="text-center">
-                            <div id="mobile-column-2" class="multicolumn-container" style="border-radius: 20px;">
-                                <video class="img-fluid video-player mobile-video-2" alt="Game Faster" muted playsinline preload="auto" autoplay="autoplay">
-                                    <source src="src/GAME_FASTER.webm" type="video/webm">
-                                    <source src="src/GAME_FASTER.mp4" type="video/mp4;">
-                                </video>
-                                <h3>Game Faster</h3>
-                                <p>Elevate your gaming experience by maximizing FPS in games like Valorant, Fortnite and Minecraft.</p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="swiper-slide mobile-header-padding">
-                        
-                        <div class="text-center">
-                            <div id="mobile-column-3" class="multicolumn-container" style="border-radius: 20px;">
-                                <video class="img-fluid video-player mobile-video-3" alt="Lightning Fast" muted playsinline preload="auto" autoplay="autoplay">
-                                    <source src="src/LIGHTNING_FAST.webm" type="video/webm">
-                                    <source src="src/LIGHTNING_FAST.mp4" type="video/mp4;">
-                                </video>
-                                <h3>Lightning Fast</h3>
-                                <p>Enjoy a stable and reliable connection. Swills fine-tunes network settings for titles such as CS:GO 2, Overwatch 2, Call of Duty: Warzone 3.0 and others.</p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="swiper-slide mobile-header-padding">
-                        Reviews
-                    </div>
-
-                    <div class="swiper-slide mobile-header-padding">
-
-                        <div class="row flex-lg-row">
-                            <div class="col-lg-12 align-self-center">
-                                <video class="img-fluid video-player mobile-video" alt="Swills Compatible, Versatile, Privacy, System Cleanup, Performance, Recording Features" autoplay="autoplay" muted loop playsinline preload="auto">
-                                    <source src="src/PERF_STATS.webm" type="video/webm">
-                                    <source src="src/PERF_STATS.mp4" type="video/mp4;">
-                                </video>
-                            </div>
-                        </div>
-
-                        <div class="text-center">
-                            <h1>Explore Our Perks</h1>
-                            <p>We'll help you take your gaming to the next level.</p>
-                        </div>
-
-                    </div>
-
-                    <div class="swiper-slide mobile-header-padding">
-
-                        <div class="row flex-lg-row text-center">
-                            <div class="col-lg-12">
-                                <div class="multicolumn-container lg-6x-1">
-                                    <img src="src/COMPATIBLE.png" alt="Compatible" class="img-fluid multicolumn-img"/>
-                                    <h4>Compatible</h4>
-                                    <p3>Works for all games, Windows 10, 11, laptops, desktops, NVIDIA, AMD, Intel GPUs</p3>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="swiper-slide mobile-header-padding">
-
-                        <div class="row flex-lg-row text-center">
-                            <div class="col-lg-12">
-                                <div class="multicolumn-container lg-6x-2">
-                                    <img src="src/VERSATILE.png" alt="Versatile" class="img-fluid multicolumn-img"/>
-                                    <h4>Versatile</h4>
-                                    <p3>Increases performance for all games and apps</p3>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="swiper-slide mobile-header-padding">
-
-                        <div class="row flex-lg-row text-center">
-                            <div class="col-lg-12">
-                                <div class="multicolumn-container lg-6x-3">
-                                    <img src="src/PRIVACY.png" alt="Privacy" class="img-fluid multicolumn-img"/>
-                                    <h4>Privacy Ensured</h4>
-                                    <p3>Will not run in the background</p3>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="swiper-slide mobile-header-padding">
-
-                        <div class="row flex-lg-row text-center">
-                            <div class="col-lg-12">
-                                <div class="multicolumn-container lg-6x-4">
-                                    <img src="src/SYSTEM.png" alt="System Cleanup" class="img-fluid multicolumn-img"/>
-                                    <h4>System Cleanup</h4>
-                                    <p3>Frees up disk space, reduces number of background processes</p3>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="swiper-slide mobile-header-padding">
-
-                        <div class="row flex-lg-row text-center">
-                            <div class="col-lg-12">
-                                <div class="multicolumn-container lg-6x-5">
-                                    <img src="src/PERFORMANCE.png" alt="Performance" class="img-fluid multicolumn-img"/>
-                                    <h4>Enhanced Performance</h4>
-                                    <p3>Boosts FPS, reduces stuttering and ensures a faster connection, lower, more stable ping</p3>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="swiper-slide mobile-header-padding">
-
-                        <div class="row flex-lg-row text-center">
-                            <div class="col-lg-12">
-                                <div class="multicolumn-container lg-6x-6">
-                                    <img src="src/STORYTELLING.png" alt="Storytelling" class="img-fluid multicolumn-img"/>
-                                    <h4>Storytelling</h4>
-                                    <p3>Improves recording quality for content creators</p3>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="swiper-slide mobile-header-padding">
-                        
-                        <div class="text-center" style="padding-bottom: 5vh;">
-                            <h1>Questions</h1>
-                            <p>Frequently asked questions about Swills, answered.</p>
-                        </div>
-
-                        <div style="padding: 0.125vh 0;">
-                            <button class="collapsible">What is Swills?</button>
-                            <div class="content">
-                                <br>Experience the next level of PC gaming with Swills, the ultimate tool for boosting FPS. Our application is designed to specifically enhance gameplay and overall computer performance, providing smoother and more responsive gaming sessions.<br><br>
-                            </div>
-                        </div>
-
-                        <div style="padding: 0.125vh 0;">
-                            <button class="collapsible">How Does Swills Improve My PC's Performance?</button>
-                            <div class="content">
-                                <br>Boosting FPS - Swills' advanced optimization techniques ensure a seamless gaming experience and a competitive advantage.<br>Minimize Latency and Lag - Swills tackles input lag and reduces latency, ensuring swift reactions and improved performance during intense gaming sessions.<br>Optimizing Network Performance - Swills fine-tunes network settings for titles such as CS:GO 2, Overwatch 2, Call of Duty: Warzone 3.0 and others.<br><br>
-                            </div>
-                        </div>
-
-                        <div style="padding: 0.125vh 0;">
-                            <button class="collapsible">How Long Does Swills Take?</button>
-                            <div class="content">
-                                <br>Purchase, Download and Use. It's that simple!<br><br>
-                            </div>
-                        </div>
-
-                        <div style="padding: 0.125vh 0;">
-                            <button class="collapsible">Are There Any Risks To Using Swills?</button>
-                            <div class="content">
-                                <br>None. Swills will not cause any harm to your system or get you banned from games.<br><br>
-                            </div>
-                        </div>
-
-                        <div style="padding: 0.125vh 0;">
-                            <button class="collapsible">Is There Customer Support Available For Swills?</button>
-                            <div class="content">
-                                <br>Of course, you can contact us  through our Discord or Email!<br><br>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="swiper-slide mobile-header-padding">
-
-                        <div class="cta-container">
-                            <div class="cta-background">
-                                <img src="src/BANNER.png" alt="Swills FPS Boost"/>
-                            </div>
-
-                            <div class="cta-content">
-                                <div class="col-lg-6 align-self-center text-center">
-                                    <h1>Maximize Your FPS</h1>
-                                    <p>Step up your gaming experience with Swills today.<br><br></p>
-
-                                    <a href="#" style="text-decoration: none;">
-                                        <button type="button" class="btn btn-outline-light me-2 btn-custom-width" style="font-weight: 700; font-size: larger;">
-                                            Buy Now
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-arrow-down-fill" viewBox="0 0 16 16">
-                                                <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708"/>
-                                            </svg>
-                                        </button>
+                    
+                        <div class="col mb-3">
+                            <h5>Navigation</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link link-inverse p-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                                            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
+                                            <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
+                                        </svg>
+                                        Home
                                     </a>
-
-                                    <a href="https://www.discord.gg/swills" style="text-decoration: none;">
-                                        <button type="button" class="btn btn-outline-primary me-2 btn-custom-width" style="font-weight: 700; font-size: larger;">
-                                            Discord
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
-                                                <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/>
-                                            </svg>
-                                        </button>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link link-inverse p-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-arrow-down-fill" viewBox="0 0 16 16">
+                                            <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708"/>
+                                        </svg>
+                                        Pricing
                                     </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-
-                        <div class="container header-padding">
-                            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5">
-                                <div class="col mb-3">
-                                    <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-                                        <img src="src/SWILLS_LOGO.png" alt="Swills Optimization" class="img-fluid"/>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link link-inverse p-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-square-text-fill" viewBox="0 0 16 16">
+                                            <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1z"/>
+                                        </svg>
+                                        About
                                     </a>
-                                    <p3>&copy; 2024 Swills Labs Ltd.<br>All rights reserved.</p3>
-                                </div>
-                            
-                                <div class="col mb-3">
-                            
-                                </div>
-                            
-                                <div class="col mb-3">
-                                    <h5>Navigation</h5>
-                                    <ul class="nav flex-column">
-                                        <li class="nav-item mb-2">
-                                            <a href="#" class="nav-link link-inverse p-0">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
-                                                    <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
-                                                    <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
-                                                </svg>
-                                                Home
-                                            </a>
-                                        </li>
-                                        <li class="nav-item mb-2">
-                                            <a href="#" class="nav-link link-inverse p-0">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-arrow-down-fill" viewBox="0 0 16 16">
-                                                    <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708"/>
-                                                </svg>
-                                                Pricing
-                                            </a>
-                                        </li>
-                                        <li class="nav-item mb-2">
-                                            <a href="#" class="nav-link link-inverse p-0">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-square-text-fill" viewBox="0 0 16 16">
-                                                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1z"/>
-                                                </svg>
-                                                About
-                                            </a>
-                                        </li>
-                                        <li class="nav-item mb-2">
-                                            <a href="#" class="nav-link link-inverse p-0">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart-fill" viewBox="0 0 16 16">
-                                                    <path d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z"/>
-                                                </svg>
-                                                Affiliates
-                                            </a>
-                                        </li>
-                                        <li class="nav-item mb-2">
-                                            <a href="#" class="nav-link link-inverse p-0">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                                                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
-                                                </svg>
-                                                Login
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            
-                                <div class="col mb-3">
-                                    <h5>Legal</h5>
-                                    <ul class="nav flex-column">
-                                        <li class="nav-item mb-2"><a href="#" class="nav-link link-inverse p-0">Terms of Service</a></li>
-                                        <li class="nav-item mb-2"><a href="#" class="nav-link link-inverse p-0">Privacy Policy</a></li>
-                                    </ul>
-                                </div>
-                            
-                                <div class="col mb-3">
-                                    <h5>Contact</h5>
-                                    <ul class="nav flex-column">
-                                        <li class="nav-item mb-2">
-                                            <a href="#" class="nav-link link-inverse p-0">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
-                                                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
-                                                </svg>
-                                                Email
-                                            </a>
-                                        </li>
-                                        <li class="nav-item mb-2">
-                                            <a href="https://www.discord.gg/swills" class="nav-link link-inverse p-0">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
-                                                    <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/>
-                                                </svg>
-                                                Discord
-                                            </a>
-                                        </li>
-                                        <li class="nav-item mb-2">
-                                            <a href="#" class="nav-link link-inverse p-0">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
-                                                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
-                                                </svg>
-                                                Youtube
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </footer>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link link-inverse p-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart-fill" viewBox="0 0 16 16">
+                                            <path d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z"/>
+                                        </svg>
+                                        Affiliates
+                                    </a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link link-inverse p-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                                        </svg>
+                                        Login
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-
-                    </div>
-
+                    
+                        <div class="col mb-3">
+                            <h5>Legal</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#" class="nav-link link-inverse p-0">Terms of Service</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link link-inverse p-0">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    
+                        <div class="col mb-3">
+                            <h5>Contact</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link link-inverse p-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+                                        </svg>
+                                        Email
+                                    </a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="https://www.discord.gg/swills" class="nav-link link-inverse p-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+                                            <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/>
+                                        </svg>
+                                        Discord
+                                    </a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="#" class="nav-link link-inverse p-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                                        </svg>
+                                        Youtube
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </footer>
                 </div>
             </div>
         </div>

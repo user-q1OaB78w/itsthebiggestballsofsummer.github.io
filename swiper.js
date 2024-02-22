@@ -1,4 +1,4 @@
-const desktopSwiper = new Swiper('.desktop-swiper',
+const swiper = new Swiper('.swiper',
 {
     direction: 'vertical',
     loop: false,
@@ -6,17 +6,9 @@ const desktopSwiper = new Swiper('.desktop-swiper',
     spaceBetween: 250,
     pagination:
     {
-      el: '.desktop-swiper-pagination',
+      el: '.main-swiper-pagination',
       clickable: true,
     },
-});
-
-const mobileSwiper = new Swiper('.mobile-swiper',
-{
-    direction: 'vertical',
-    loop: false,
-    mousewheel: true,
-    spaceBetween: 250,
 });
 
 const reviewSwiper = new Swiper('.review-swiper',
