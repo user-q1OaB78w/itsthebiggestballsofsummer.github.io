@@ -342,6 +342,25 @@ header
     .review-slide img
     {
         height: 300px;
+        margin: 0 30px;
+    }
+}
+
+@media(max-width: 767px)
+{
+    .review-slide img
+    {
+        height: 200px;
+        margin: 0 20px;
+    }
+}
+
+@media(max-width: 319px)
+{
+    .review-slide img
+    {
+        height: 150px;
+        margin: 0 15px;
     }
 }
 
@@ -351,6 +370,9 @@ header
 
 .collapsible
 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #222222;
     cursor: pointer;
     color: #FFFFFF;
@@ -380,7 +402,6 @@ header
 .collapsible:after
 {
     content: url('src/CARET_DOWN.svg');
-    float: right;
     margin-left: 5px;
 }
 
