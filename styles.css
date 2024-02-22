@@ -317,11 +317,6 @@ header
     white-space: nowrap;
     position: relative;
 }
-
-.reviews:hover .review-slide 
-{
-    animation-play-state: paused;
-}
   
 .review-slide
 {
