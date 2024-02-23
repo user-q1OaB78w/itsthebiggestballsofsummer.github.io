@@ -51,6 +51,7 @@ header
 {
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     position: fixed;
     width: 100%;
     z-index: 999;
@@ -174,8 +175,11 @@ header
 
 .banner-content
 {
+    position: relative;
+    overflow: hidden;
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
 }
 
 .banner-content img
@@ -202,6 +206,14 @@ header
     .banner-widget
     {
         padding: 12vw;
+    }
+}
+
+@media(max-height: 767px)
+{
+    .mobile-widget
+    {
+        display: none;
     }
 }
 
@@ -234,6 +246,29 @@ header
 {
     width: 35%;
     height: auto;
+}
+
+.sm-3x-1
+{
+    border-radius: 12px 0 0 12px;
+}
+
+.sm-3x-2
+{
+    border-radius: 0;
+}
+
+.sm-3x-3
+{
+    border-radius: 0 12px 12px 0;
+}
+
+@media (max-width: 767px)
+{
+    .sm-3x-1, .sm-3x-2, .sm-3x-3
+    {
+        border-radius: 12px;
+    }
 }
 
 .lg-6x-1
@@ -321,13 +356,13 @@ header
 .review-slide
 {
     display: inline-block;
-    animation: 80s slide infinite linear;
+    animation: 90s slide infinite linear;
 }
 
 .review-slide img
 {
     height: 400px;
-    margin: 0 40px;
+    margin: 0 20px;
     background-color: #222222;
     border-radius: 12px;
 }
@@ -337,7 +372,7 @@ header
     .review-slide img
     {
         height: 300px;
-        margin: 0 30px;
+        margin: 0 15px;
     }
 }
 
@@ -346,7 +381,7 @@ header
     .review-slide img
     {
         height: 200px;
-        margin: 0 20px;
+        margin: 0 10px;
     }
 }
 
@@ -355,7 +390,7 @@ header
     .review-slide img
     {
         height: 150px;
-        margin: 0 15px;
+        margin: 0 7.5px;
     }
 }
 
