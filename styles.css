@@ -59,7 +59,6 @@ header
     left: 0;
 }
 
-
 .desktop, .desktop-header
 {
     overflow-x: hidden;
@@ -133,14 +132,14 @@ header
     display: grid;
     align-content: center;
     margin: 0;
-    padding: 10vh 18vw 10vh 18vw;
+    padding: 12vh 18vw 12vh 18vw;
 }
 
 @media(max-width: 1679px)
 {
     .section
     {
-        padding: 10vh 12vw 10vh 12vw;
+        padding: 12vh 12vw 12vh 12vw;
     }
 }
 
@@ -148,7 +147,7 @@ header
 {
     .section
     {
-        padding: 10vh 8vw 10vh 8vw;
+        padding: 12vh 8vw 12vh 8vw;
     }
 }
 
@@ -545,6 +544,79 @@ header
 }
 
 /* CTA, DISCORD */
+
+/* PRICING */
+
+.pricing-3x
+{
+    border-radius: 12px 12px 0 0;
+}
+
+.features-3x
+{
+    border-radius: 0 0 12px 12px;
+}
+
+@media(max-width: 991px)
+{
+    .pricing-3x, .features-3x
+    {
+        border-radius: 12px;
+    }
+}
+
+@media(min-width: 991px)
+{
+    .pricing-img
+    {
+        transition: transform 0.5s ease-in-out;    
+    }
+    
+    .multicolumn-container:hover
+    {
+        .pricing-img
+        {
+            transform: scale(1.1075);
+            transition: transform 0.5s ease-in-out;
+        }    
+    }
+}
+
+.feature
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+}
+
+.feature:after
+{
+    content: url('src/TICK.svg');
+    margin-left: 5px;
+}
+
+.feature-disabled
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+}
+
+.feature-disabled:after
+{
+    content: url('src/CROSS.svg');
+    margin-left: 5px;
+}
+
+/* PRICING */
 
 h1, h2, h3, h4, h5
 {
