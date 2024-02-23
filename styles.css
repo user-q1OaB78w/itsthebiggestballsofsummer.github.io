@@ -173,19 +173,32 @@ header
     z-index: -1;
 }
 
+.mobile-banner-container
+{
+    display: grid;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.mobile-banner-container .banner-background img
+{
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
 .banner-content
 {
-    position: relative;
-    overflow: hidden;
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-}
-
-.banner-content img
-{
-    max-width: 100%;
-    height: auto;
 }
 
 .banner-widget
@@ -206,14 +219,6 @@ header
     .banner-widget
     {
         padding: 12vw;
-    }
-}
-
-@media(max-height: 767px)
-{
-    .mobile-widget
-    {
-        display: none;
     }
 }
 
