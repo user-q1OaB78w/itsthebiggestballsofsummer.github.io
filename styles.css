@@ -41,10 +41,12 @@ img
 
 body
 {
+	background: #1C1C1C;
+    color: #C3C3C3;
     font-family: 'Montserrat';
     line-height: 160%;
-	background: #1C1C1C;
-    color: #FFFFFF;
+    font-weight: 600;
+    font-size: larger;
 }
 
 header
@@ -518,6 +520,7 @@ header
     color: #5865F2;
     border-color: #5865F2;
 }
+
 .btn-outline-primary:hover, .btn-outline-primary:focus
 {
     color: #FFFFFF;
@@ -527,7 +530,7 @@ header
 
 .btn-outline-primary:active
 {
-    color: #fff;
+    color: #FFFFFF;
     background-color: #5865F2;
     border-color: #5865F2;
 }
@@ -536,11 +539,6 @@ header
 {
     color: #5865F2;
     background-color: transparent;
-}  
-
-.btn-custom-width
-{
-    width: 150px;
 }
 
 /* CTA, DISCORD */
@@ -582,7 +580,15 @@ header
     }
 }
 
-.feature
+.feature-row
+{
+    display: flex;
+    align-items: center;
+    height: 128px;
+    margin: 20px;
+}
+
+.feature, .feature-disabled
 {
     display: flex;
     align-items: center;
@@ -599,17 +605,6 @@ header
     margin-left: 5px;
 }
 
-.feature-disabled
-{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    border: none;
-    outline: none;
-    text-align: left;
-}
-
 .feature-disabled:after
 {
     content: url('src/CROSS.svg');
@@ -617,6 +612,81 @@ header
 }
 
 /* PRICING */
+
+.payments
+{
+    padding: 4vw;
+}
+
+.lg-9x-1
+{
+    border-radius: 12px 0 0 12px;
+}
+
+.lg-9x-2
+{
+    border-radius: 0 12px 12px 0;
+}
+
+@media (max-width: 991px)
+{
+    .lg-9x-1
+    {
+        border-radius: 12px 12px 0 0;
+    }
+    .lg-9x-2
+    {
+        border-radius: 0 0 12px 12px;
+    }
+}
+
+.btn-dark
+{
+    color: #FFFFFF;
+    background-color: #222222;
+    border-color: transparent;
+}
+
+.btn-dark:hover, .btn-dark:focus
+{
+    color: #FFFFFF;
+    background-color: #2D2D2D;
+    border-color: transparent;
+}
+
+.btn-dark:active
+{
+    color: #FFFFFF;
+    background-color: #2D2D2D;
+    border-color: transparent;
+}
+
+.btn-outline-primary.disabled, .btn-outline-primary:disabled
+{
+    color: #FFFFFF;
+    background-color: #222222;
+    border-color: transparent;
+}
+
+/* PRICING */
+
+/* ABOUT */
+
+@media (min-width: 767px)
+{
+    .about-img
+    {
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .about-img:hover
+    {
+        transform: scale(1.105);
+        transition: transform 0.5s ease-in-out;   
+    }
+}
+
+/* ABOUT */
 
 h1, h2, h3, h4, h5
 {

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"></meta>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"></meta>
+
+		<title>Swills | About</title>
+		<link rel="icon" href="src/LOGO.png" type="image/x-icon"></link>
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        
+		<link rel="stylesheet" href="styles.css"></link>
+        <script src="header.js"></script>
+	</head>
+
+    <body>
+        <header class="desktop-header">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-sm-start" style="padding: 2vh 2vw 2vh 2vw;">
+                <a href="./" class="d-flex align-items-center mb-2 mb-md-0 text-white text-decoration-none">
+                    <img src="src/LOGO.png" alt="Swills Optimization" width="75px" height="75px"/>      
+                </a>
+        
+                <ul class="nav col-12 col-sm-auto me-sm-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="./" class="nav-link link px-2">Home</a></li>
+                    <li><a href="./pricing" class="nav-link link px-2">Pricing</a></li>
+                    <li><a href="./about" class="nav-link link px-2">About</a></li>
+                </ul>
+        
+                <div class="text-end">
+                    <a href="./pricing" style="text-decoration: none;">
+                        <button type="button" class="btn btn-outline-light me-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-arrow-down-fill" viewBox="0 0 16 16">
+                                <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708"/>
+                            </svg>
+                        </button>
+                    </a>
+        
+                    <a href="./login" style="text-decoration: none;">
+                        <button type="button" class="btn btn-outline-light me-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                            </svg>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <header class="mobile-header">
+            <div style="padding: 12px; display: flex; align-items: center; justify-content: space-between;">
+                <svg data-bs-toggle="collapse" href="#collapseNavbar" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+
+                <div class="text-end d-flex">
+                    <a href="./pricing" class="nav-link link px-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-cloud-arrow-down-fill" viewBox="0 0 16 16">
+                            <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708"/>
+                        </svg>
+                    </a>
+
+                    <a href="./login" class="nav-link link px-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="w-100 float-start">
+                <div class="collapse" id="collapseNavbar">
+                    <nav class="navbar navbar-expand-sm">
+                        <div style="padding-left: 12px; padding-bottom: 100vh;">
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="padding-bottom: 32px; font-size: xx-large;" class="align-self-center"><a href="./" class="nav-link link px-2">Home</a></li>
+                                <li style="padding-bottom: 32px; font-size: xx-large;"><a href="./pricing" class="nav-link link px-2">Pricing</a></li>
+                                <li style="padding-bottom: 32px; font-size: xx-large;"><a href="./about" class="nav-link link px-2">About</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div class="desktop">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide header-padding">
+                        <div class="row flex-md-row">
+                            <div class="col-md-9 align-self-center">
+                                <h1>About Us</h1>
+                                <p>We are two individuals with a never-ending love for video games, looking to share our expertise with gamers all around the globe, and aiming to free them from their troubles with poor PC performance. Here, read a bit about us...</p>
+                            </div>
+                            
+                            <div class="col-md-3 align-self-center">
+                                <img class="img-fluid about-img" src="src/ABOUT.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header-padding swiper-slide">
+                        <div class="row flex-column-reverse flex-md-row">
+                            <div class="col-md-3 align-self-center">
+                                <img class="img-fluid about-img" src="src/STORY.png">
+                            </div>
+        
+                            <div class="col-md-9 align-self-center">
+                                <h1>Our Story</h1>
+                                <p>Being gamers at heart, here at Swills, we've been playing video games for as long as we can remember. Like many of you, our computers were quite weak and could not run modern games, leaving us struggling to keep up with our opponents. We were fed up with losing and knew it was time to take our revenge.</p>
+                                <p>That's where it all began. We delved into the world of optimizations, experimenting with various settings and tweaks to enhance our computers and squeeze more performance out of them. We transformed our computers; the hardware we once believed was rubbish now outperformed PCs with much better components! As our knowledge and expertise grew, we started helping others and saw potential in aiding all gamers around the world, marking the start of our journey with Swills.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header-padding swiper-slide">
+                        <div class="row flex-md-row">
+                            <div class="col-md-9 align-self-center">
+                                <h1>Our Mission</h1>
+                                <p>Imagine unparalleled latency, as if you were the in-game character, or the smoothness of your game, identical to a cinematic experience. Gamers crave fast, snappy systems, allowing them to prevail during critical situations in gaming. Through Swills, we aim to give everyone the best gaming experience they have ever had: the best performance, lowest latency, and fastest connection out there, helping them beat their rivals.</p>
+                            </div>
+                            
+                            <div class="col-md-3 align-self-center">
+                                <img class="img-fluid about-img" src="src/MISSION.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header-padding swiper-slide">
+                        <div class="row flex-column-reverse flex-md-row">
+                            <div class="col-md-3 align-self-center">
+                                <img class="img-fluid about-img" src="src/GOAL.png">
+                            </div>
+        
+                            <div class="col-md-9 align-self-center">
+                                <h1>Our Goals</h1>
+                                <p>The target we have set for ourselves is pretty simple: let the whole world know about Swills! Jokes aside, we will be looking to continuously improve and expand Swills, to ensure the best possible user experience. We've got plenty of updates rolling out, and projects we are working on, so make sure to join us for the ride!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header-padding swiper-slide">
+                        <div class="row flex-md-row">
+                            <div class="col-md-6 align-self-center">
+                                <h1>Join Our Community</h1>
+                                <p>Have any questions for us? Our goal is to ensure your gaming experience is as smooth as possible. Feel free to reach out to us for support at any time on our Discord Server.<br><br></p>
+        
+                                <button type="button" class="btn btn-dark btn-lg" style="font-weight: 700; font-size: larger;  width: 200px;">
+                                    Buy Now
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-arrow-down-fill" viewBox="0 0 16 16">
+                                        <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708"/>
+                                    </svg>
+                                </button>
+                            </div>
+        
+                            <div class="col-md-6 align-self-center text-center">
+                                <iframe style="padding-top: 20px;" src="https://discord.com/widget?id=938873545721798716&theme=dark" width="auto" height="500px" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header-padding swiper-slide">
+
+                    </div>
+                </div>
+
+                <div class="header-padding main-swiper-pagination swiper-pagination"></div>
+            </div>
+        </div>
+
+        <div class="mobile">
+            <div class="section mobile-header-padding">
+                <div class="row flex-md-row">
+                    <div class="col-md-9 align-self-center">
+                        <h1>About Us</h1>
+                        <p>We are two individuals with a never-ending love for video games, looking to share our expertise with gamers all around the globe, and aiming to free them from their troubles with poor PC performance. Here, read a bit about us...</p>
+                    </div>
+                    
+                    <div class="col-md-3 align-self-center">
+                        <img class="img-fluid about-img" src="src/ABOUT.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="row flex-column-reverse flex-md-row">
+                    <div class="col-md-3 align-self-center">
+                        <img class="img-fluid about-img" src="src/STORY.png">
+                    </div>
+
+                    <div class="col-md-9 align-self-center">
+                        <h1>Our Story</h1>
+                        <p>Being gamers at heart, here at Swills, we've been playing video games for as long as we can remember. Like many of you, our computers were quite weak and could not run modern games, leaving us struggling to keep up with our opponents. We were fed up with losing and knew it was time to take our revenge.</p>
+                        <p>That's where it all began. We delved into the world of optimizations, experimenting with various settings and tweaks to enhance our computers and squeeze more performance out of them. We transformed our computers; the hardware we once believed was rubbish now outperformed PCs with much better components! As our knowledge and expertise grew, we started helping others and saw potential in aiding all gamers around the world, marking the start of our journey with Swills.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="row flex-md-row">
+                    <div class="col-md-9 align-self-center">
+                        <h1>Our Mission</h1>
+                        <p>Imagine unparalleled latency, as if you were the in-game character, or the smoothness of your game, identical to a cinematic experience. Gamers crave fast, snappy systems, allowing them to prevail during critical situations in gaming. Through Swills, we aim to give everyone the best gaming experience they have ever had: the best performance, lowest latency, and fastest connection out there, helping them beat their rivals.</p>
+                    </div>
+                    
+                    <div class="col-md-3 align-self-center">
+                        <img class="img-fluid about-img" src="src/MISSION.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="row flex-column-reverse flex-md-row">
+                    <div class="col-md-3 align-self-center">
+                        <img class="img-fluid about-img" src="src/GOAL.png">
+                    </div>
+
+                    <div class="col-md-9 align-self-center">
+                        <h1>Our Goals</h1>
+                        <p>The target we have set for ourselves is pretty simple: let the whole world know about Swills! Jokes aside, we will be looking to continuously improve and expand Swills, to ensure the best possible user experience. We've got plenty of updates rolling out, and projects we are working on, so make sure to join us for the ride!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="row flex-md-row">
+                    <div class="col-md-6 align-self-center">
+                        <h1>Join Our Community</h1>
+                        <p>Have any questions for us? Our goal is to ensure your gaming experience is as smooth as possible. Feel free to reach out to us for support at any time on our Discord Server.<br><br></p>
+
+                        <button type="button" class="btn btn-dark btn-lg" style="font-weight: 700; font-size: larger;  width: 200px;">
+                            Buy Now
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-arrow-down-fill" viewBox="0 0 16 16">
+                                <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="col-md-6 align-self-center text-center">
+                        <iframe style="padding-top: 20px;" src="https://discord.com/widget?id=938873545721798716&theme=dark" width="280px" height="500px" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+
+            </div>
+        </div>
+
+        <script src="swiper.js"></script>
+        <script src="collapsible.js"></script>
+    </body>
+</html>
