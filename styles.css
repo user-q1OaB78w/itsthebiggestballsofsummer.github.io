@@ -46,7 +46,6 @@ body
     font-family: 'Montserrat';
     line-height: 160%;
     font-weight: 600;
-    font-size: larger;
 }
 
 header
@@ -223,6 +222,8 @@ header
     }
 }
 
+#
+
 /* BANNER */
 
 /* MULTICOLUMN */
@@ -338,6 +339,11 @@ header
     {
         padding: 0 8vw 0 8vw;
     }
+}
+
+.star-icons i
+{
+    display: inline-block;
 }
 
 @keyframes slide
@@ -515,6 +521,19 @@ header
     z-index: 2;
 }
 
+.cta-btns .cta-btn
+{
+    display: inline-block;
+}
+
+@media(max-width: 767px)
+{
+    .cta-btn
+    {
+        padding: 0.25vh 0 0.25vh 0;
+    }
+}
+
 .btn-outline-primary
 {
     color: #5865F2;
@@ -585,7 +604,8 @@ header
     display: flex;
     align-items: center;
     height: 128px;
-    margin: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .feature, .feature-disabled
@@ -739,4 +759,16 @@ p3
 .link-inverse:hover
 {
     color: #FFFFFF;    
+}
+
+.link-discord
+{
+    font-weight: 700;
+    color: #5865F2;
+    text-decoration: none;
+}
+
+.link-discord:hover
+{
+    color: #3F4CC6;
 }
