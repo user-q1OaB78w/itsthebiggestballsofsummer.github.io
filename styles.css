@@ -593,7 +593,7 @@ header
         {
             transform: scale(1.1075);
             transition: transform 0.5s ease-in-out;
-        }    
+        }
     }
 }
 
@@ -627,6 +627,11 @@ header
 {
     content: url('src/CROSS.svg');
     margin-left: 5px;
+}
+
+.prices h2, h3
+{
+    display: inline-block;
 }
 
 /* PRICING */
@@ -713,7 +718,7 @@ h1, h2, h3, h4, h5
     font-weight: 800;
 }
 
-p, p2, p3
+p, p2, p3, input
 {
     font-family: 'Montserrat';
     color: #C3C3C3;
@@ -733,6 +738,14 @@ p2
 p3
 {
     font-size: large;
+}
+
+input
+{
+    font-size: larger;
+    background-color: transparent;
+    border: none;
+    outline: none;
 }
 
 .link
